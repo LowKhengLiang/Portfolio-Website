@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "headline": "Building Intelligent Systems & Generating Impactful Insights",
+    "subheadline": "With AI and Machine Learning",
+    "bio": "Hi, I'm Kheng Liang. I build intelligent systems using Machine Learning, Deep Learning, and Agentic AI—redefining how software is designed, automated, and scaled. Explore my journey."
+  },
+  "contact": {
+    "email": "khengliang@example.com",
+    "github": "https://github.com/LowKhengLiang",
+    "linkedin": "#"
+  }
+}

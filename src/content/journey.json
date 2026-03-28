@@ -1,0 +1,46 @@
+[
+  {
+    "id": "university",
+    "title": "University",
+    "description": "Degree details, key coursework, academic focus",
+    "icon": "GraduationCap",
+    "details": [
+      "B.S. in Computer Science",
+      "Specialization in Artificial Intelligence"
+    ],
+    "year": "2019 - 2023"
+  },
+  {
+    "id": "internship",
+    "title": "Internship",
+    "description": "Role details, skills learned, impact made",
+    "icon": "Briefcase",
+    "details": [
+      "Software Engineering Intern",
+      "Developed internal ML tools"
+    ],
+    "year": "2022"
+  },
+  {
+    "id": "job",
+    "title": "Job Experience",
+    "description": "Company, role, major achievements, leadership",
+    "icon": "LineChart",
+    "details": [
+      "AI Engineer",
+      "Led intelligent systems development"
+    ],
+    "year": "2023 - Present"
+  },
+  {
+    "id": "projects",
+    "title": "Personal Projects",
+    "description": "Project names, tech stack, methodologies, outcomes",
+    "icon": "Hexagon",
+    "details": [
+      "Agentic AI Portfolio",
+      "Autonomous Trading Bot"
+    ],
+    "year": "Ongoing"
+  }
+]
