@@ -1,6 +1,7 @@
 import React from 'react';
 import Background from './components/Background';
 import HeroSection from './components/HeroSection';
+import SkillsetSection from './components/SkillsetSection';
 import Journey from './components/Journey';
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
       
       {/* Scene 1 & 2 */}
       <HeroSection />
+
+      {/* Skills Section */}
+      <SkillsetSection />
       
       {/* Scene 3 - 7 */}
       <Journey />

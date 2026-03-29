@@ -2,13 +2,52 @@
   {
     "id": "university",
     "title": "University",
-    "description": "Degree details, key coursework, academic focus",
+    "description": "I graduated with a Second Upper Honours from the Singapore University of Social Sciences, majoring in Business Analytics with a Minor in Information Technology.\n\nMy academic journey focused on Machine Learning and Data Visualisation, where I built a strong foundation in areas such as predictive modelling, clustering and association analysis, deep learning, reinforcement learning, and natural language processing.\n\nBeyond theory, my studies emphasized practical application—bridging data-driven insights with real-world implementation through hands-on projects and technical development.",
     "icon": "GraduationCap",
     "details": [
-      "B.S. in Computer Science",
-      "Specialization in Artificial Intelligence"
+      "Academic Achievers List",
+      "Representative for SUSS MonsoonSIM",
+      "Finalist — SUSS Business Cohort FYP: Contemporary Business Strategy Competition",
+      "Teaching Assistant for Selenium Web Scraping",
+      "SUSS Befrienders"
     ],
-    "year": "2019 - 2023"
+    "year": "2019 - 2023",
+    "subSections": [
+      {
+        "id": "fyp",
+        "title": "Final Year Project",
+        "cardTitle": "Final Year Project",
+        "cardDescription": "Contemporary Business Strategy Competition",
+        "content": {
+          "text": "My final year project involved participating in the Contemporary Business Strategy Competition, where we applied advanced machine learning techniques to real-world business challenges. Our team placed as finalists among top cohorts by developing predictive models that consistently outperformed baseline strategies.",
+          "gallery": [
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
+          ],
+          "docs": [
+            { "name": "Project Report", "link": "#" },
+            { "name": "Presentation Slides", "link": "#" }
+          ]
+        }
+      },
+      {
+        "id": "academic-skills",
+        "title": "Academic Skillsets",
+        "cardTitle": "Academic Skillsets",
+        "cardDescription": "Advanced algorithms & modeling",
+        "content": {
+          "text": "Throughout my degree, I developed deep practical expertise. Moving beyond standard coursework, I implemented reinforcement learning agents for dynamic optimization and utilized NLP to uncover insights from unstructured text data.",
+          "gallery": [
+            "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1620825937374-87fc1d6aafcb?auto=format&fit=crop&w=800&q=80"
+          ],
+          "docs": [
+            { "name": "Course Modules Breakdown", "link": "#" }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "internship",

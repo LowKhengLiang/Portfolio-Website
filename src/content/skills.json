@@ -1,0 +1,45 @@
+[
+  {
+    "category": "AI / Machine Learning",
+    "priority": 1,
+    "skills": [
+      "Python",
+      "Scikit-learn",
+      "Keras",
+      "Pandas",
+      "Matplotlib",
+      "LangChain",
+      "LangGraph",
+      "Pinecone",
+      "RAG",
+      "Prompt Engineering",
+      "AI Agent IDE (Google AntiGravity)"
+    ]
+  },
+  {
+    "category": "Data & Databases",
+    "priority": 2,
+    "skills": [
+      "SQL",
+      "MongoDB"
+    ]
+  },
+  {
+    "category": "Software & Web Development",
+    "priority": 3,
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "category": "Tools & DevOps",
+    "priority": 4,
+    "skills": [
+      "Git",
+      "SonarQube",
+      "Jenkins"
+    ]
+  }
+]

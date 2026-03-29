@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useTransform } from 'framer-motion';
 import { GraduationCap, Briefcase, LineChart, Hexagon } from 'lucide-react';
+import UniversityContent from './UniversityContent';
 
 const iconMap = {
   GraduationCap: GraduationCap,
@@ -45,22 +46,26 @@ const JourneyStage = ({ stage, index, scrollYProgress }) => {
 
       {/* Content */}
       <div className={`w-full md:w-1/2 flex flex-col ${isEven ? 'md:order-2 text-left' : 'md:order-1 md:text-right'}`}>
-        <div className="glass-panel p-8 md:p-12 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-colors text-left shadow-xl backdrop-blur-md">
-          <span className="text-blue-400 text-sm font-semibold tracking-wider uppercase mb-2 block">{stage.year}</span>
-          <h3 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">{stage.title}</h3>
-          <p className="text-gray-300 text-base md:text-lg mb-6 leading-relaxed font-light">
-            {stage.description}
-          </p>
-          
-          <ul className="space-y-3">
-            {stage.details.map((detail, i) => (
-              <li key={i} className="flex items-center gap-3 text-gray-400">
-                <div className="w-1.5 h-1.5 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.8)] flex-shrink-0" />
-                <span className="font-light">{detail}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {stage.id === 'university' ? (
+          <UniversityContent stage={stage} />
+        ) : (
+          <div className="glass-panel p-8 md:p-12 rounded-3xl border border-white/10 hover:border-blue-500/30 transition-colors text-left shadow-xl backdrop-blur-md">
+            <span className="text-blue-400 text-sm font-semibold tracking-wider uppercase mb-2 block">{stage.year}</span>
+            <h3 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">{stage.title}</h3>
+            <p className="text-gray-300 text-base md:text-lg mb-6 leading-relaxed font-light">
+              {stage.description}
+            </p>
+            
+            <ul className="space-y-3">
+              {stage.details.map((detail, i) => (
+                <li key={i} className="flex items-center gap-3 text-gray-400">
+                  <div className="w-1.5 h-1.5 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.8)] flex-shrink-0" />
+                  <span className="font-light">{detail}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
     </motion.div>
