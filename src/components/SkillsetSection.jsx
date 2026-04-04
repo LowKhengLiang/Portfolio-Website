@@ -29,7 +29,7 @@ const SkillsetSection = () => {
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           transition={{ duration: 0.8 }}
           className="mb-16 text-center"
         >
@@ -38,7 +38,7 @@ const SkillsetSection = () => {
         </motion.div>
 
         <div className="flex flex-col gap-12">
-          {skillsData.sort((a,b) => a.priority - b.priority).map((categoryObj, index) => (
+          {[...skillsData].sort((a,b) => a.priority - b.priority).map((categoryObj, index) => (
             <div key={index} className="flex flex-col md:flex-row gap-6 md:gap-12">
               <div className="md:w-1/3 flex-shrink-0">
                 <h3 className="text-xl font-semibold text-blue-300 border-b border-blue-900/50 pb-2 mb-4">
@@ -50,7 +50,7 @@ const SkillsetSection = () => {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: false, margin: "-50px" }}
               >
                 {categoryObj.skills.map((skill, i) => (
                   <motion.div 
