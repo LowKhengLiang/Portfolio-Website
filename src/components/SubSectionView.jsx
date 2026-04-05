@@ -9,6 +9,12 @@ const GithubIcon = ({ className }) => (
   </svg>
 );
 
+const getAssetUrl = (path) => {
+  if (!path) return '';
+  if (path.startsWith('http')) return path;
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+};
+
 const renderMarkdown = (text) => {
   const parts = text.split(/(\*\*.*?\*\*)/g);
   return parts.map((part, index) => {
@@ -119,7 +125,7 @@ const SubSectionView = ({ sub, onClose }) => {
                         <SectionContainer title={sub.content.segments.dataProcessing.title}>
                            <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 w-full flex flex-col items-center bg-white/5">
                               <div className="w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl border border-white/5 relative mb-8">
-                                  <img src={sub.content.segments.dataProcessing.image} alt="SQL Progress" className="w-full h-auto max-h-[500px] object-cover drop-shadow-2xl" />
+                                  <img src={getAssetUrl(sub.content.segments.dataProcessing.image)} alt="SQL Progress" className="w-full h-auto max-h-[500px] object-cover drop-shadow-2xl" />
                                   <div className="absolute inset-0 bg-gradient-to-t from-[#030014]/60 to-transparent opacity-50" />
                               </div>
                               <p className="text-gray-300 text-center mb-8 font-light text-lg">{sub.content.segments.dataProcessing.caption}</p>
@@ -197,7 +203,7 @@ const SubSectionView = ({ sub, onClose }) => {
                                       const CardContent = (
                                         <div className="min-w-[85vw] md:min-w-[680px] snap-center shrink-0 flex flex-col gap-3 group translate-z-0">
                                             <div className="w-full h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative bg-[#010108]/60 flex items-center justify-center p-4">
-                                               <img src={url} alt={`Gallery frame ${i}`} className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-lg" />
+                                               <img src={getAssetUrl(url)} alt={`Gallery frame ${i}`} className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-lg" />
                                                <div className="absolute inset-0 bg-gradient-to-t from-[#030014]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                             </div>
                                             {caption && (
