@@ -2,7 +2,7 @@
   {
     "id": "university",
     "title": "University",
-    "description": "I graduated with a Second Upper Honours from the Singapore University of Social Sciences, majoring in Business Analytics with a Minor in Information Technology.\n\nMy academic journey focused on Machine Learning and Data Visualisation, where I built a strong foundation in areas such as predictive modelling, clustering and association analysis, deep learning, reinforcement learning, and natural language processing.\n\nBeyond theory, my studies emphasized practical application—bridging data-driven insights with real-world implementation through hands-on projects and technical development.",
+    "description": "I graduated from the Singapore University of Social Sciences, majoring in Business Analytics with a Minor in Information Technology.\n\nMy academic journey focused on Machine Learning and Data Visualisation, where I built a strong foundation in areas such as predictive modelling, clustering and association analysis, deep learning, reinforcement learning, and natural language processing.\n\nBeyond theory, my studies emphasized practical application—bridging data-driven insights with real-world implementation through hands-on projects and technical development.",
     "icon": "GraduationCap",
     "details": [
       "Academic Achievers List",
@@ -11,23 +11,36 @@
       "Teaching Assistant for Selenium Web Scraping",
       "SUSS Befrienders"
     ],
-    "year": "2019 - 2023",
+    "year": "2020 - 2024",
     "subSections": [
       {
         "id": "fyp",
         "title": "Final Year Project",
         "cardTitle": "Final Year Project",
-        "cardDescription": "Contemporary Business Strategy Competition",
+        "cardDescription": "Sephora Skincare Analytics using NLP and Clustering",
         "content": {
-          "text": "My final year project involved participating in the Contemporary Business Strategy Competition, where we applied advanced machine learning techniques to real-world business challenges. Our team placed as finalists among top cohorts by developing predictive models that consistently outperformed baseline strategies.",
+          "text": "Awarded Grade: A-\n\nAbstract:\n\nThis paper leveraged text mining techniques, including sentiment analysis and topic modeling on skincare product reviews from Sephora to uncover the common complaints about specific brands and products.\n\nAlgorithms like Valance Aware Dictionary and Sentiment Reasoner (VADER) and Fine-Tuned DistilBERT for sentiment analysis, and Term-Frequency Inverse Document Frequency (TF-IDF) and Latent Dirichlet Allocation (LDA) were compared to determine the most suitable model for the dataset.\n\nThrough the analysis of 22 top and bottom-performing skincare brands, specific product strengths and weaknesses were identified, guiding future investigations into specific product ingredients responsible for the shortcomings.\n\nAdditionally, K-Means clustering was performed on products to address the low-sales product groups, facilitating targeted marketing strategies.\n\nDespite uncovering insights for the skincare brands, generalizing the findings and solutions remains a challenge due to the dominant presence of American and Asian reviews. Future studies could explore beyond these regions to enhance the robustness of the findings on a global scale, ultimately developing effective well-received skincare product formulations universally.",
           "gallery": [
-            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
+            {
+              "url": "/assets/projects/fyp/Final_Year_Report.png",
+              "caption": "Preview the Final Year Report below."
+            },
+            {
+              "url": "/assets/projects/fyp/Selenium_Web_Scraping.png",
+              "caption": "Click here to preview the Selenium web scraping technique",
+              "link": "https://github.com/LowKhengLiang/selenium"
+            },
+            {
+              "url": "/assets/projects/fyp/Topic_Modelling.png",
+              "caption": "Click here to preview the Topic Modelling On Product Reviews",
+              "link": "https://github.com/LowKhengLiang/nlp"
+            }
           ],
           "docs": [
-            { "name": "Project Report", "link": "#" },
-            { "name": "Presentation Slides", "link": "#" }
+            {
+              "name": "Project Report",
+              "link": "https://drive.google.com/file/d/1OflBb_SVf5akRDgXkqaNgEx54SVc-YjH/view"
+            }
           ]
         }
       },
@@ -35,16 +48,69 @@
         "id": "academic-skills",
         "title": "Academic Skillsets",
         "cardTitle": "Academic Skillsets",
-        "cardDescription": "Advanced algorithms & modeling",
+        "cardDescription": "Machine Learning, Deep Learning, SQL",
         "content": {
-          "text": "Throughout my degree, I developed deep practical expertise. Moving beyond standard coursework, I implemented reinforcement learning agents for dynamic optimization and utilized NLP to uncover insights from unstructured text data.",
-          "gallery": [
-            "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1620825937374-87fc1d6aafcb?auto=format&fit=crop&w=800&q=80"
-          ],
-          "docs": [
-            { "name": "Course Modules Breakdown", "link": "#" }
-          ]
+          "text": "I developed a strong foundation in Machine Learning and Deep Learning, focusing on building predictive models, analyzing complex datasets, and applying techniques such as clustering, classification, and neural networks. Alongside this, I strengthened my SQL skills to efficiently query, manage, and transform data, enabling end-to-end data-driven solutions from extraction to model deployment. Here are the toy projects I worked on during my undergraduate studies.",
+          "segments": {
+            "machineLearning": {
+              "title": "Machine Learning & Deep Learning",
+              "mlProjects": [
+                {
+                  "title": "Mobile Price Classification",
+                  "description": "This is a classic ML project for learning the fundamentals, applying classification techniques like Logistic Regression against a Naive Bayes model, and investigating whether scaling affects the results.",
+                  "link": "https://github.com/LowKhengLiang/basic_ml/blob/main/Mobile%20Price%20Classification.ipynb"
+                },
+                {
+                  "title": "Wine Clustering",
+                  "description": "The wine dataset is obtained from the sklearn.datasets library. This project aimed to teach me to understand how to perform clustering with Python and its corresponding evaluation metrics.",
+                  "link": "https://github.com/LowKhengLiang/basic_ml/blob/main/Wine%20Clustering.ipynb"
+                },
+                {
+                  "title": "Diabetes Prediction",
+                  "description": "Moving into contextual understanding, this project compares Support Vector Machines and Decision Trees on a diabetes dataset. It further emphasizes the importance of avoiding false negatives in a medical context.",
+                  "link": "https://github.com/LowKhengLiang/basic_ml/blob/main/Diabetes%20Prediction.ipynb"
+                },
+                {
+                  "title": "Galaxy Stars Classification",
+                  "description": "An interesting toy project that engaged the techniques of ensemble models, proposing the optimal depth and number of trees in a random forest model to predict a star type.",
+                  "link": "https://github.com/LowKhengLiang/basic_ml/blob/main/Galaxy%20Stars%20Classification.ipynb"
+                }
+              ],
+              "dlProjects": [
+                {
+                  "title": "Simple Neural Network Classifier",
+                  "description": "This project is my first exposure to Neural Networks, aiming to identify the gender of a wrestler given the other parameters, prepared through data encoding. I designed a simple neural network classifier with 1 hidden layer and compared it to a Naive Bayes classifier to facilitate my understanding of the topic.",
+                  "link": "https://github.com/LowKhengLiang/deep_learning/blob/main/Pro%20Wrestler%20Gender%20Prediction.ipynb"
+                },
+                {
+                  "title": "Image Classification with CNN",
+                  "description": "I have always wondered how a computer recognizes images. Surprisingly, it does relate to my previous course of study (motion graphics). These images are recognized using pixel values of RGB color channels, forming an array of information, taking values between 0-255 per pixel. This project aims to identify whether an image is a cat or a rabbit to enhance my learning on CNNs.",
+                  "link": "https://github.com/LowKhengLiang/deep_learning/blob/main/Cat%20and%20Rabbit%20Image%20Classification.ipynb"
+                },
+                {
+                  "title": "LSTM Stock Price Prediction",
+                  "description": "It is interesting how the concept of ARIMA models is similar to Recurrent Neural Networks, using a series of sequential data to make forecasts. However, due to the limitation of RNN memory capacity to remember previous data iterations, I used LSTM instead to predict the price of one Singapore stock exchange data.",
+                  "link": "https://github.com/LowKhengLiang/deep_learning/blob/main/DBS%20Group%20Holdings%20Ltd%20Stock%20Price%20Prediction.ipynb"
+                },
+                {
+                  "title": "Reinforcement Q-Learning Snake Game",
+                  "description": "Developed an AI agent that learns to play the classic Snake game autonomously using Reinforcement Learning. I implemented Deep Q-Networks (DQN) using PyTorch, allowing the agent to continuously maximize its score through reward-based exploration and exploitation.",
+                  "link": "https://github.com/LowKhengLiang/snake_game"
+                }
+              ]
+            },
+            "dataProcessing": {
+              "title": "Data Processing & SQL",
+              "image": "/assets/projects/academic_skillsets/sql_progress.png",
+              "caption": "Consistent practice on complex queries and data manipulation.",
+              "link": "https://platform.stratascratch.com/user/kllow009"
+            },
+            "reportShowcase": {
+              "title": "Data Programming Assignment",
+              "description": "This assignment demonstrates strong proficiency in **data programming and data manipulation using Python**. It focuses on the use of libraries such as **Pandas** and **NetworkX**, alongside database integration with **SQLite** to perform extract, transform, and load (ETL) operations, as well as complex data calculations. The work highlights the ability to handle real-world data workflows and build efficient data pipelines. I achieved a score of **99/100**, reflecting a high level of technical accuracy and implementation quality.",
+              "link": "https://drive.google.com/file/d/1uQfG0I_9dpssQPz_10WkmWLxfm8UfOiz/view"
+            }
+          }
         }
       }
     ]
