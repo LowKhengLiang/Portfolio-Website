@@ -207,6 +207,39 @@ const SubSectionView = ({ sub, onClose }) => {
                            ))}
                         </SectionContainer>
                      )}
+
+                     {/* Personal Projects Segment (Cards with Writeup + 2 Buttons) */}
+                     {sub.content.segments.personalProjects && (
+                        <SectionContainer title={sub.content.segments.personalProjects.title}>
+                           <div className="space-y-6 w-full">
+                              {sub.content.segments.personalProjects.items.map((proj, i) => (
+                                 <div key={i} className="glass-panel p-6 md:p-8 rounded-2xl border border-white/10 hover:border-blue-500/30 transition-all text-left bg-white/5 relative overflow-hidden group">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                    <div className="relative z-10 w-full flex flex-col h-full">
+                                      <h4 className="text-xl md:text-2xl font-bold text-white mb-4 tracking-tight group-hover:text-blue-300 transition-colors">{proj.title}</h4>
+                                      <p className="text-gray-300 text-sm md:text-base leading-relaxed font-light flex-grow mb-8">
+                                         {renderMarkdown(proj.description)}
+                                      </p>
+                                      <div className="flex flex-wrap gap-4 mt-auto">
+                                         {proj.previewSite && proj.previewSite !== "#" && (
+                                            <a href={proj.previewSite} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600/20 text-blue-300 border border-blue-500/30 hover:bg-blue-600/40 hover:border-blue-500 transition-all font-medium text-sm">
+                                               Live Preview
+                                               <ExternalLink className="w-4 h-4 ml-1" />
+                                            </a>
+                                         )}
+                                         {proj.github && proj.github !== "#" && (
+                                            <a href={proj.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-all font-medium text-sm">
+                                               <GithubIcon className="w-4 h-4" />
+                                               Repository
+                                            </a>
+                                         )}
+                                      </div>
+                                    </div>
+                                 </div>
+                              ))}
+                           </div>
+                        </SectionContainer>
+                     )}
                      
                   </div>
                 )}

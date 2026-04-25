@@ -36,17 +36,19 @@ const UniversityContent = ({ stage }) => {
           ))}
         </div>
         
-        <div className="mb-6">
-            <h4 className="text-lg font-semibold mb-3 text-gray-200">Awards & Contributions</h4>
-            <ul className="space-y-2">
-              {stage.details.map((detail, i) => (
-                <li key={i} className="flex items-start gap-3 text-gray-400">
-                  <div className="w-1.5 h-1.5 mt-2 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.8)] flex-shrink-0" />
-                  <span className="font-light text-sm">{detail}</span>
-                </li>
-              ))}
-            </ul>
-        </div>
+        {stage.details && stage.details.length > 0 && (
+          <div className="mb-6">
+              <h4 className="text-lg font-semibold mb-3 text-gray-200">Awards & Contributions</h4>
+              <ul className="space-y-2">
+                {stage.details.map((detail, i) => (
+                  <li key={i} className="flex items-start gap-3 text-gray-400">
+                    <div className="w-1.5 h-1.5 mt-2 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.8)] flex-shrink-0" />
+                    <span className="font-light text-sm">{detail}</span>
+                  </li>
+                ))}
+              </ul>
+          </div>
+        )}
 
         {stage.subSections && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 border-t border-white/10 pt-6">

@@ -166,11 +166,21 @@
         "title": "UOB Technology Development Program",
         "content": {
           "text": "As part of the Technology Development Program (Software Track) at UOB, my experience centers around driving tangible, cross-functional impact through software engineering and applied artificial intelligence. Working within a heavily regulated and complex banking environment, I specialize in architecting scalable automation solutions and developing intelligent tools that streamline enterprise workflows. Whether it is building **end-to-end RAG pipelines** for intensive document processing or orchestrating report automation platforms, I focus on delivering robust, maintainable, and high-performance engineering solutions.",
+          "gallery": [
+            {
+              "url": "/assets/projects/job_experience/TDP_Software.JPG",
+              "caption": "Software Track"
+            },
+            {
+              "url": "/assets/projects/job_experience/GBT_Townhall.JPG",
+              "caption": "2025 GBT Townhall"
+            }
+          ],
           "segments": {
             "bulletPoints": {
               "title": "Projects & Achievements",
               "items": [
-                "**Emceed Group Banking Technology 2025 Townhall**, demonstrating high-level communication and leadership presence.",
+                "**Emceed Group Banking Technology 2025 Townhall**",
                 "**Built an end-to-end RAG pipeline for PDF parsing**, utilizing embeddings, vector databases, and seamless LLM integration.",
                 "**Automated JUnit5 test generation** using a synergy of Python and LLMs to drastically accelerate development lifecycles.",
                 "**Built a regex-based refactoring tool** engineered specifically to detect unclosed mocked static references across large JUnit5 repositories.",
@@ -180,9 +190,23 @@
             "tags": {
               "title": "Skills & Technologies",
               "groups": {
-                "Languages & Core Backend": ["Python", "SQL", "Spring Boot", "Flask"],
-                "Applied AI & Data Integration": ["Gen AI / LLMs", "RAG", "Vector DB", "Pandas"],
-                "CI/CD & Code Quality": ["Bitbucket", "Jenkins", "SonarQube"]
+                "Languages & Core Backend": [
+                  "Python",
+                  "SQL",
+                  "Spring Boot",
+                  "Flask"
+                ],
+                "Applied AI & Data Integration": [
+                  "Gen AI / LLMs",
+                  "RAG",
+                  "Vector DB",
+                  "Pandas"
+                ],
+                "CI/CD & Code Quality": [
+                  "Bitbucket",
+                  "Jenkins",
+                  "SonarQube"
+                ]
               }
             }
           }
@@ -193,12 +217,37 @@
   {
     "id": "projects",
     "title": "Personal Projects",
-    "description": "Project names, tech stack, methodologies, outcomes",
+    "description": "During my free time, I like to explore emerging technologies and work on personal projects to upskill and equip myself with the necessary expertise to stay relevant! Here are some projects focused on Machine Learning and AI for you to explore!",
     "icon": "Hexagon",
-    "details": [
-      "Agentic AI Portfolio",
-      "Autonomous Trading Bot"
-    ],
-    "year": "Ongoing"
+    "year": "Ongoing",
+    "subSections": [
+      {
+        "id": "featured-projects",
+        "cardTitle": "Machine Learning & AI",
+        "cardDescription": "Advanced algorithms and intelligent applications",
+        "title": "Featured Personal Projects",
+        "content": {
+           "segments": {
+              "personalProjects": {
+                 "title": "Innovative Explorations",
+                 "items": [
+                    {
+                       "title": "AI Travel Planner",
+                       "description": "An intelligent web application that dynamically curates highly personalized travel itineraries by analyzing user preferences and leveraging advanced Large Language Models. Built end-to-end focusing on optimal UX and real-time AI inference capabilities.",
+                       "previewSite": "https://your-preview-site.com",
+                       "github": "https://github.com/LowKhengLiang/your-repo-link"
+                    },
+                    {
+                       "title": "Project Proxy",
+                       "description": "Currently exploring and conceptualizing advanced machine learning architectures to handle sophisticated analytical workflows natively. *Under heavy active development.*",
+                       "previewSite": "#",
+                       "github": "https://github.com/LowKhengLiang"
+                    }
+                 ]
+              }
+           }
+        }
+      }
+    ]
   }
 ]
