@@ -38,7 +38,7 @@ const JourneyStage = ({ stage, index }) => {
       <div className="w-full md:w-1/2 flex flex-col">
           <div className={`w-full pl-24 md:pl-0 ${isEven ? 'md:pr-20 lg:pr-32' : 'md:pl-20 lg:pl-32'}`}>
               
-            {stage.id === 'university' ? (
+            {stage.subSections && stage.subSections.length > 0 ? (
               <UniversityContent stage={stage} />
             ) : (
               <div className="glass-panel p-8 md:p-12 rounded-3xl border border-white/10 hover:border-blue-500/50 transition-all text-left shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_10px_40px_rgba(59,130,246,0.2)] backdrop-blur-md bg-opacity-40 bg-gray-900 overflow-hidden">

@@ -117,25 +117,78 @@
   },
   {
     "id": "internship",
-    "title": "Internship",
-    "description": "Role details, skills learned, impact made",
-    "icon": "Briefcase",
+    "title": "Infineon Technologies Product Master Data Intern",
     "details": [
-      "Software Engineering Intern",
-      "Developed internal ML tools"
+      "Product Master Data Working Student"
     ],
-    "year": "2022"
+    "description": "A 1-year work-study immersion focusing on Digitalization, workflow automation, and developing AI/ML solutions for the global end-to-end supply chain.",
+    "icon": "Briefcase",
+    "year": "2022 - 2023",
+    "subSections": [
+      {
+        "id": "internship-details",
+        "cardTitle": "Internship Experience",
+        "cardDescription": "Role details, learnings, and experiences",
+        "title": "Internship Experience",
+        "content": {
+          "text": "I did my 1 year work-study program with Infineon Technologies as a Digitalization intern for the Product Master Data Department and it was nothing short of a meaningful and enriching experience. \n\nDuring my time, I proposed an AI/ML project aiming to improve the operational workflow process of the department after learning about Infineon's end-to-end supply chain and a hands-on experience with its systems. Contributing to the project, I have conducted meetings and communicated my ideas with various stakeholders such as senior management, IT colleagues, and data scientists. During the weekly team meetings, I played the role of a technical expert, understanding the business requirements shared by my colleagues and translating them into actionable results through Python programming. The technicality involved creating an ETL pipeline using the **Pandas** library and performing ML operations on the dataset for supply chain route predictions. Apart from the technicalities, I had the opportunity to participate in various events conducted by Infineon and network with many brilliant individuals. The most memorable event would be the Oktobertech where emerging technologies of the semiconductor industry are showcased through robotics, engineering, and machine learning. Finally, my colleagues are very friendly and supportive, providing me with the warmth and comfort that was very much appreciated. This department feels like a big family and I am very thankful for the opportunity to be part of it!",
+          "gallery": [
+            {
+              "url": "/assets/projects/internship/infineon_intern.png",
+              "caption": "My time at Infineon Technologies"
+            }
+          ],
+          "docs": [
+            {
+              "name": "Testimonial",
+              "link": "https://drive.google.com/file/d/1UVW8TTGnymxQYU2s_z_T02kMSH486ErL/view"
+            }
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "job",
-    "title": "Job Experience",
-    "description": "Company, role, major achievements, leadership",
+    "title": "UOB – Technology Development Program (Software Track)",
+    "description": "A focused journey in software engineering and applied AI within a progressive banking environment, driving impactful enterprise automation.",
     "icon": "LineChart",
     "details": [
       "AI Engineer",
-      "Led intelligent systems development"
+      "Software Developer"
     ],
-    "year": "2023 - Present"
+    "year": "2023 - Present",
+    "subSections": [
+      {
+        "id": "job-details",
+        "cardTitle": "Software Engineering & Applied AI",
+        "cardDescription": "RAG Pipelines, Automation, Core Tools",
+        "title": "UOB Technology Development Program",
+        "content": {
+          "text": "As part of the Technology Development Program (Software Track) at UOB, my experience centers around driving tangible, cross-functional impact through software engineering and applied artificial intelligence. Working within a heavily regulated and complex banking environment, I specialize in architecting scalable automation solutions and developing intelligent tools that streamline enterprise workflows. Whether it is building **end-to-end RAG pipelines** for intensive document processing or orchestrating report automation platforms, I focus on delivering robust, maintainable, and high-performance engineering solutions.",
+          "segments": {
+            "bulletPoints": {
+              "title": "Projects & Achievements",
+              "items": [
+                "**Emceed Group Banking Technology 2025 Townhall**, demonstrating high-level communication and leadership presence.",
+                "**Built an end-to-end RAG pipeline for PDF parsing**, utilizing embeddings, vector databases, and seamless LLM integration.",
+                "**Automated JUnit5 test generation** using a synergy of Python and LLMs to drastically accelerate development lifecycles.",
+                "**Built a regex-based refactoring tool** engineered specifically to detect unclosed mocked static references across large JUnit5 repositories.",
+                "**Developed a report automation platform** leveraging **Antigravity** integrated tightly with robust SQL and Pandas pipelines."
+              ]
+            },
+            "tags": {
+              "title": "Skills & Technologies",
+              "groups": {
+                "Languages & Core Backend": ["Python", "SQL", "Spring Boot", "Flask"],
+                "Applied AI & Data Integration": ["Gen AI / LLMs", "RAG", "Vector DB", "Pandas"],
+                "CI/CD & Code Quality": ["Bitbucket", "Jenkins", "SonarQube"]
+              }
+            }
+          }
+        }
+      }
+    ]
   },
   {
     "id": "projects",

@@ -175,6 +175,38 @@ const SubSectionView = ({ sub, onClose }) => {
                            </div>
                         </SectionContainer>
                      )}
+
+                     {/* Generic Bullet Points Segment */}
+                     {sub.content.segments.bulletPoints && (
+                        <SectionContainer title={sub.content.segments.bulletPoints.title}>
+                            <ul className="space-y-4">
+                              {sub.content.segments.bulletPoints.items.map((item, i) => (
+                                 <li key={i} className="flex items-start gap-4 text-gray-300">
+                                   <div className="w-2 h-2 mt-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)] flex-shrink-0" />
+                                   <span className="leading-relaxed font-light text-base md:text-lg">{renderMarkdown(item)}</span>
+                                 </li>
+                              ))}
+                            </ul>
+                        </SectionContainer>
+                     )}
+
+                     {/* Generic Tags/Skills Segment */}
+                     {sub.content.segments.tags && (
+                        <SectionContainer title={sub.content.segments.tags.title}>
+                           {Object.entries(sub.content.segments.tags.groups).map(([groupName, tags], idx) => (
+                              <div key={idx} className="mb-8 last:mb-0">
+                                 <h5 className="text-lg font-semibold text-gray-200 mb-4">{groupName}</h5>
+                                 <div className="flex flex-wrap gap-3">
+                                    {tags.map((tag, i) => (
+                                       <span key={i} className="px-5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:bg-blue-900/30 hover:border-blue-500/50 transition-all text-blue-200 text-sm font-medium tracking-wide">
+                                          {tag}
+                                       </span>
+                                    ))}
+                                 </div>
+                              </div>
+                           ))}
+                        </SectionContainer>
+                     )}
                      
                   </div>
                 )}
