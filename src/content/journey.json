@@ -227,25 +227,25 @@
         "cardDescription": "Advanced algorithms and intelligent applications",
         "title": "Featured Personal Projects",
         "content": {
-           "segments": {
-              "personalProjects": {
-                 "title": "Innovative Explorations",
-                 "items": [
-                    {
-                       "title": "AI Travel Planner",
-                       "description": "An intelligent web application that dynamically curates highly personalized travel itineraries by analyzing user preferences and leveraging advanced Large Language Models. Built end-to-end focusing on optimal UX and real-time AI inference capabilities.",
-                       "previewSite": "https://your-preview-site.com",
-                       "github": "https://github.com/LowKhengLiang/your-repo-link"
-                    },
-                    {
-                       "title": "Project Proxy",
-                       "description": "Currently exploring and conceptualizing advanced machine learning architectures to handle sophisticated analytical workflows natively. *Under heavy active development.*",
-                       "previewSite": "#",
-                       "github": "https://github.com/LowKhengLiang"
-                    }
-                 ]
-              }
-           }
+          "segments": {
+            "personalProjects": {
+              "title": "Innovative Explorations",
+              "items": [
+                {
+                  "title": "AI Travel Planner",
+                  "description": "This is a **PROTOTYPE** Travel Itinerary Planner built using Google Antigravity. This project is a testament to the power of AI-assisted development, allowing for rapid prototyping and the creation of sophisticated applications with minimal boilerplate code. It demonstrates the potential of AI tools to enhance developer productivity and creativity.",
+                  "previewSite": "https://lowkhengliang.github.io/AITravelPlanner/",
+                  "github": "https://github.com/LowKhengLiang/your-repo-link"
+                },
+                {
+                  "title": "Project Proxy",
+                  "description": "Currently exploring and conceptualizing advanced machine learning architectures to handle sophisticated analytical workflows natively. *Under heavy active development.*",
+                  "previewSite": "#",
+                  "github": "https://github.com/LowKhengLiang"
+                }
+              ]
+            }
+          }
         }
       }
     ]

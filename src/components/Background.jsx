@@ -14,8 +14,8 @@ const Background = () => {
     canvas.height = height;
 
     let particles = [];
-    const numParticles = Math.min(Math.floor((width * height) / 10000), 100);
-    const maxDistance = 150;
+    const numParticles = Math.min(Math.floor((width * height) / 7000), 120);
+    const maxDistance = 180;
     
     let mouse = { x: null, y: null };
     let scrollY = 0;
@@ -50,10 +50,10 @@ const Background = () => {
       constructor() {
         this.x = Math.random() * width;
         this.y = Math.random() * height * 2; // Spread across double height to allow scroll parallax
-        this.vx = (Math.random() - 0.5) * 0.5;
-        this.vy = (Math.random() - 0.5) * 0.5;
-        this.radius = Math.random() * 1.5 + 0.5;
-        this.baseAlpha = Math.random() * 0.5 + 0.1;
+        this.vx = (Math.random() - 0.5) * 0.4;
+        this.vy = (Math.random() - 0.5) * 0.4;
+        this.radius = Math.random() * 2.0 + 1.0;
+        this.baseAlpha = Math.random() * 0.4 + 0.2;
       }
 
       update() {
@@ -93,7 +93,7 @@ const Background = () => {
 
         ctx.beginPath();
         ctx.arc(this.x, renderY, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(100, 150, 255, ${alpha})`;
+        ctx.fillStyle = `rgba(120, 160, 255, ${alpha * 0.8})`;
         ctx.fill();
         
         return { x: this.x, y: renderY };
@@ -135,12 +135,12 @@ const Background = () => {
                 const mdy = mouse.y - midY;
                 const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
                 if(mdist < 150) {
-                    opacity = Math.min(opacity + 0.3, 1);
+                    opacity = Math.min(opacity + 0.4, 1);
                 }
             }
 
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(100, 150, 255, ${opacity * 0.3})`;
+            ctx.strokeStyle = `rgba(120, 180, 255, ${opacity * 0.45})`;
             ctx.lineWidth = 1;
             ctx.moveTo(drawnParticles[i].x, drawnParticles[i].y);
             ctx.lineTo(drawnParticles[j].x, drawnParticles[j].y);

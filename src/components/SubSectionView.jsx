@@ -227,12 +227,6 @@ const SubSectionView = ({ sub, onClose }) => {
                                                <ExternalLink className="w-4 h-4 ml-1" />
                                             </a>
                                          )}
-                                         {proj.github && proj.github !== "#" && (
-                                            <a href={proj.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-all font-medium text-sm">
-                                               <GithubIcon className="w-4 h-4" />
-                                               Repository
-                                            </a>
-                                         )}
                                       </div>
                                     </div>
                                  </div>
