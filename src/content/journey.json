@@ -243,7 +243,7 @@
                 },
                 {
                   "title": "Brain Tumor Detection with YOLOv10",
-                  "description": "A deep learning project focused on early brain tumor detection using YOLOv10. This project explores advanced computer vision techniques to identify tumors in MRI scans, aiming to improve diagnostic accuracy and speed.",
+                  "description": "A deep learning project focused on early brain tumor detection using YOLOv10. This project explores advanced computer vision techniques to identify tumors in MRI scans, aiming to improve diagnostic accuracy and speed. Through this project, I learnt about bounding boxes, the color channels, image processing, and the YOLOv10 architecture.",
                   "image": "/assets/projects/personal_projects/yolo_brain_tumor.png",
                   "previewSite": "#",
                   "github": "https://github.com/LowKhengLiang"
