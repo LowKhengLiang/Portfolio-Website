@@ -165,7 +165,7 @@
         "cardDescription": "RAG Pipelines, Automation, Core Tools",
         "title": "UOB Technology Development Program",
         "content": {
-          "text": "As part of the Technology Development Program (Software Track) at UOB, my experience centers around driving tangible, cross-functional impact through software engineering and applied artificial intelligence. Working within a heavily regulated and complex banking environment, I specialize in architecting scalable automation solutions and developing intelligent tools that streamline enterprise workflows. Whether it is building **end-to-end RAG pipelines** for intensive document processing or orchestrating report automation platforms, I focus on delivering robust, maintainable, and high-performance engineering solutions.",
+          "text": "I joined UOB through the Technology Development Program (Software Track), where I underwent a three-month structured training in collaboration with Ngee Ann Polytechnic. The program equipped us with foundational technical and domain knowledge to prepare for real-world deployments. It culminated in a capstone project, where my team and I achieved second place with our solution on leveraging predictive machine learning techniques to detect fraudulent credit card transactions. \n\nFor my first assignment, I was placed in a Governance role, where I supported the coordination of requirements from senior management and stakeholders. During this period, I had the opportunity to deliver my first presentation to the Head of Group Technology and Operations. While initially challenging, the experience pushed me out of my comfort zone and helped me build confidence in both communication and presentation—skills that later proved valuable when I emceed the Group Banking Technology 2025 Townhall. \n\nI later transitioned to the Digital Banking space, where I was tasked with improving internal workflow processes. This marked a shift towards more hands-on technical work, where I focused on building automation tools and exploring AI-driven solutions to enhance efficiency and reduce manual effort within the team.",
           "gallery": [
             {
               "url": "/assets/projects/job_experience/TDP_Software.JPG",
@@ -174,6 +174,10 @@
             {
               "url": "/assets/projects/job_experience/GBT_Townhall.JPG",
               "caption": "2025 GBT Townhall"
+            },
+            {
+              "url": "/assets/projects/job_experience/TDP_Capstone.jpg",
+              "caption": "TDP Capstone Project"
             }
           ],
           "segments": {
@@ -181,10 +185,10 @@
               "title": "Projects & Achievements",
               "items": [
                 "**Emceed Group Banking Technology 2025 Townhall**",
-                "**Built an end-to-end RAG pipeline for PDF parsing**, utilizing embeddings, vector databases, and seamless LLM integration.",
-                "**Automated JUnit5 test generation** using a synergy of Python and LLMs to drastically accelerate development lifecycles.",
-                "**Built a regex-based refactoring tool** engineered specifically to detect unclosed mocked static references across large JUnit5 repositories.",
-                "**Developed a report automation platform** leveraging **Antigravity** integrated tightly with robust SQL and Pandas pipelines."
+                "**Built an end-to-end RAG pipeline for PDF parsing**, parsing PDFs, chunking them into smaller pieces, utilizing embeddings, vector databases, and querying with LLM.",
+                "**Automated JUnit5 test generation** using Python and LLMs for legacy bank applications.",
+                "**Built a regex-based refactoring tool** engineered to detect unclosed mocked static references across large JUnit5 repositories.",
+                "**Developed a excel report automation platform** leveraging **Antigravity** with Springboot, Flask, SQL and Pandas."
               ]
             },
             "tags": {
@@ -233,13 +237,14 @@
               "items": [
                 {
                   "title": "AI Travel Planner",
-                  "description": "This is a **PROTOTYPE** Travel Itinerary Planner built using Google Antigravity. This project is a testament to the power of AI-assisted development, allowing for rapid prototyping and the creation of sophisticated applications with minimal boilerplate code. It demonstrates the potential of AI tools to enhance developer productivity and creativity.",
+                  "description": "This is a **PROTOTYPE** Travel Itinerary Planner built using Google Antigravity. I built my travel itinerary app because I've experienced how time-consuming and fragmented trip planning can be. From searching for destinations and comparing options to organizing everything into a coherent schedule, the process often involves jumping between multiple platforms and still feeling uncertain about the final plan. I envisioned a better experience, one where planning is streamlined, personalized, and automated. By leveraging AI, I want to create a tool that makes travel planning feel effortless rather than overwhelming. This project is a testament to the power of AI-assisted development, allowing for rapid prototyping and the creation of sophisticated applications with minimal boilerplate code. It demonstrates the potential of AI tools to enhance developer productivity and creativity.",
                   "previewSite": "https://lowkhengliang.github.io/AITravelPlanner/",
                   "github": "https://github.com/LowKhengLiang/your-repo-link"
                 },
                 {
-                  "title": "Project Proxy",
-                  "description": "Currently exploring and conceptualizing advanced machine learning architectures to handle sophisticated analytical workflows natively. *Under heavy active development.*",
+                  "title": "Brain Tumor Detection with YOLOv10",
+                  "description": "A deep learning project focused on early brain tumor detection using YOLOv10. This project explores advanced computer vision techniques to identify tumors in MRI scans, aiming to improve diagnostic accuracy and speed.",
+                  "image": "/assets/projects/personal_projects/yolo_brain_tumor.png",
                   "previewSite": "#",
                   "github": "https://github.com/LowKhengLiang"
                 }

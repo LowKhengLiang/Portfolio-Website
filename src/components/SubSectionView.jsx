@@ -217,6 +217,13 @@ const SubSectionView = ({ sub, onClose }) => {
                                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                     <div className="relative z-10 w-full flex flex-col h-full">
                                       <h4 className="text-xl md:text-2xl font-bold text-white mb-4 tracking-tight group-hover:text-blue-300 transition-colors">{proj.title}</h4>
+                                      
+                                      {proj.image && (
+                                        <div className="w-full rounded-xl overflow-hidden mb-6 shadow-lg border border-white/10">
+                                          <img src={getAssetUrl(proj.image)} alt={proj.title} className="w-full h-auto max-h-[300px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                                        </div>
+                                      )}
+
                                       <p className="text-gray-300 text-sm md:text-base leading-relaxed font-light flex-grow mb-8">
                                          {renderMarkdown(proj.description)}
                                       </p>
